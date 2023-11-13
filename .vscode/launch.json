@@ -6,7 +6,9 @@
     "configurations": [
         {
             "name": "Python: Current File, Current Dir",
-            "purpose": ["debug-in-terminal"],
+            "purpose": [
+                "debug-in-terminal"
+            ],
             "cwd": "${fileDirname}",
             "type": "python",
             "request": "launch",

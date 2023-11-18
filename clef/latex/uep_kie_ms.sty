@@ -1,0 +1,112 @@
+% styl
+\usepackage{auto-pst-pdf}
+%\setbeameroption{show notes on second screen=bottom}
+%\setbeameroption{show notes on second screen=right}
+%\setbeamertemplate{note page}{\insertnote}
+\definecolor{green uep}{HTML}{005322}
+\definecolor{green ok}{HTML}{5EDC1F}
+
+\definecolor{lightgrey}{HTML}{eeeeee} 
+\setbeamercolor{structure}{fg=green uep}
+
+\setbeamercolor{block title}{fg=white, bg=green uep}
+\setbeamercolor{block body}{fg=black, bg=lightgrey}
+
+\setbeamercolor{block title example}{fg=green uep, bg=lightgrey}
+\setbeamercolor{block body example}{fg=black, bg=lightgrey}
+\useinnertheme{circles}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}[frame number]
+
+% paczki
+\usepackage[utf8]{inputenc}
+ \usepackage{polski}
+\usepackage[T1]{fontenc}
+%\usepackage[intlimits]{amsmath}
+%\usepackage{amsmath}
+\usepackage{amsthm, amssymb, calrsfs, wasysym, verbatim, bbm, color, graphics, geometry}
+%\usepackage{amsmath, amsthm, amssymb, calrsfs, wasysym, verbatim, bbm, color, graphics, geometry}
+\usepackage{bm}
+\usepackage{algorithm}
+\usepackage{algorithmicx}
+\usepackage[noend]{algpseudocode}
+% \usepackage{url}
+% \usepackage{lmodern}
+\usepackage{tikz}
+\usetikzlibrary{matrix,arrows,automata, shapes,fit,trees,positioning,shadows}
+\graphicspath{ {./figures/} } 
+\usepackage{pgfplots}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{tabularx}
+\usepackage[cache=false]{minted}
+\setminted{linenos=true}
+
+\theoremstyle{remark}
+% \newtheorem*{example}{Przykład}
+
+\usepackage{parskip}
+% \setlength{\parskip}{\smallskipamount} 
+
+
+\newcommand{\mymk}[1]{%
+  \tikz[baseline=(char.base)]\node[anchor=south west, draw,rectangle, rounded corners, inner sep=2pt, minimum size=7mm,
+    text height=2mm](char){\ensuremath{#1}} ;}
+
+\newcommand*\circled[1]{\tikz[baseline=(char.base)]{
+            \node[shape=circle,draw,inner sep=2pt] (char) {#1};}}
+
+
+            \tikzset{%
+  highlight/.style={rectangle,rounded corners,fill=red!15,draw,
+    fill opacity=0.5,thick,inner sep=0pt}
+}
+\newcommand{\tikzmark}[2]{\tikz[overlay,remember picture,
+  baseline=(#1.base)] \node (#1) {#2};}
+%
+\newcommand{\Highlight}[1][submatrix]{%
+    \tikz[overlay,remember picture]{
+    \node[highlight,fit=(left.north west) (right.south east)] (#1) {};}
+}
+
+\newcommand\ub[1]{\underbracket[0.4pt][1.5pt]{\mkern1mu#1\mkern1mu}}
+\newcommand\hlr[1]{\color{red}{\bm{#1}}}
+\newcommand\hlg[1]{\color{green ok}{\bm{#1}}}
+
+
+
+
+\newcommand{\boxstring}[2]% numbers, specifications
+{   \begin{tikzpicture}
+    [ l/.style={minimum width=6mm, minimum height=6mm, rounded corners=1.5mm, draw=black, fill=lime!70!gray},
+        o/.style={minimum width=6mm, minimum height=6mm, rounded corners=1.5mm, draw=black, fill=olive!50},
+        r/.style={minimum width=6mm, minimum height=6mm, rounded corners=1.5mm, draw=black, fill=magenta!50!black, text=white, font=\bf, yshift=1.5mm},
+        b/.style={minimum width=8mm, minimum height=8mm, rounded corners=2mm, draw=black, fill=magenta!50!black, text=white, font=\bf},
+        g/.style={minimum width=8mm, minimum height=8mm, rounded corners=2mm, draw=black, fill=gray, text=white, font=\bf}, 
+    ]
+        \xdef\maxindex{0}
+        \foreach \rep/\opt in {#2}
+        {   \pgfmathtruncatemacro{\maxin}{\maxindex+\rep}
+            \xdef\minindex{\maxindex}
+            \xdef\maxindex{\maxin}
+            \foreach \x [count=\c] in {#1}
+            {   \pgfmathtruncatemacro{\drawbool}{and(\c>\minindex,\c<=\maxindex) ? 1 : 0}
+                \ifthenelse{\drawbool=1}
+                {   \node[\opt] at (\c,0) {\x};
+                }{}
+            }
+        }
+    \end{tikzpicture}
+    \bigskip
+}
+
+
+
+% Cormen's cost analysis
+\newcommand{\TITLE}[1]{\item[#1]}
+\renewcommand{\algorithmiccomment}[1]{$/\!/$ \parbox[t]{4.5cm}{\raggedright #1}}
+% ugly hack for for/while
+\newbox\fixbox
+\renewcommand{\algorithmicdo}{\setbox\fixbox\hbox{\ {} }\hskip-\wd\fixbox}
+% end of hack
+\newcommand{\algcost}[2]{\strut\hfill\makebox[1.5cm][l]{#1}\makebox[4cm][l]{#2}}

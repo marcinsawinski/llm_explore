@@ -1,0 +1,98 @@
+\documentclass[aspectratio=149]{beamer}
+
+\usepackage[english]{babel}
+\usepackage{uep_kie_ms}
+\usepackage{makecell}
+\usepackage{pgfplots}
+\setbeamertemplate{footline}[text line]{
+\includegraphics[height=0.7cm]{logo_uep}
+\hspace*{8cm}~%
+\includegraphics[height=0.7cm]{logo_ncbr_en}
+}
+
+
+\author{Marcin~Sawiński}
+\date{2023-10-25}
+\institute{Poznań University of Economics and Business} 
+\title{Deep fact check AI assisted fact-check protocol with Large Language Models}
+\subtitle{Part of PhD dissertation}
+\pgfplotsset{compat=1.18}
+\begin{document}
+
+\begin{frame}
+\begin{figure}
+% \includegraphics[height=1cm]{logo_clef}
+% \hspace*{0.5cm}~%
+\includegraphics[height=1cm]{logo_openfact}
+\hspace*{0.5cm}~%
+\includegraphics[height=1cm]{logo_infos.png}
+\hspace*{0.5cm}~%
+\includegraphics[height=1cm]{logo_godlo_flaga}
+\end{figure}
+\fontsize{7pt}{7pt}\selectfont
+OpenFact -- AI tools for verification of veracity of information sources and fake news detection.\\ Financed by National Center for Research and Development in Poland (INFOSTRATEG-I/0035/2021-00).
+
+\titlepage
+\end{frame}
+\begin{frame}{Research}
+    Motivation.
+    Research questions:
+    \begin{itemize}
+      \item How to decompose fact-checking process into fine-grained steps?
+      \item How to map fact-checking steps into available tools and methods?
+      \item How to combine individual fact-checking steps into end-to-end solution? 
+      \item How to measure success of every step?
+      \item How to automate creating and configuration of the complete process and individual steps?
+    \end{itemize}
+    \end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%FRAME%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{LLMs for fact checking}
+LLMs cannot be used directly for fact checking for multiple-reasons:   \cite{Wecel023}
+\begin{itemize}
+  \item unpredictable outputs
+  \item unreliable reasoning process
+  \item limited knowledge (training cut-off)
+  \item limited context understanding
+  \item expensive to be used at scale
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Process breakdown}
+
+\end{frame}
+
+\begin{frame}{Process }
+
+\end{frame}
+
+\begin{frame}{Process }
+
+\end{frame}
+
+\begin{frame}{Process }
+
+\end{frame}
+% https://www.researchgate.net/publication/372569929_Artificial_intelligence-friend_or_foe_in_fake_news_campaigns
+%%%%%%%%%%%%%%%%%%%%%%%%%FRAME%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Experiments}
+
+\bibliographystyle{plain}
+    \bibliography{references}
+\end{frame}
+
+
+
+% MemGPT and Sparse Priming Representations (SPR), have emerged as significant players in addressing this challenge. While MemGPT employs an intelligent memory tier management system inspired by traditional operating systems, SPR offers a human-like approach to memory organization and retrieval.
+% https://thesequence.substack.com/p/edge-335-lora-fine-tuning-and-low
+% https://github.com/cpacker/MemGPT
+% https://github.com/daveshap/SparsePrimingRepresentations
+% https://blog.research.google/2023/11/best-of-both-worlds-achieving.html
+
+% https://medium.com/@lawrenceteixeira/prompt-engineering-compressing-text-to-ideas-and-decompressing-back-with-sparse-priming-6b85d1fb4887
+
+% https://medium.com/@daniellefranca96/spr-sparse-priming-representations-a0e9db13cca9
+% https://arxiv.org/abs/2311.00430v1
+% https://thesequence.substack.com/p/edge-339-what-is-prefix-tuning
+
+\end{document}

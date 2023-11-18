@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="400mm"
+   height="200mm"
+   viewBox="0 0 400.00001 200"
+   version="1.1"
+   id="svg5"
+   sodipodi:docname="logo_openfact.svg"
+   inkscape:version="1.2.1 (9c6d41e, 2022-07-14)"
+   inkscape:export-filename="logo_openfact.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview20632"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="false"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.20777321"
+     inkscape:cx="974.62036"
+     inkscape:cy="909.64567"
+     inkscape:window-width="1580"
+     inkscape:window-height="818"
+     inkscape:window-x="0"
+     inkscape:window-y="38"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg5"
+     showborder="false"
+     borderlayer="false" />
+  <defs
+     id="defs2">
+    <linearGradient
+       id="gra1">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop30543" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="1"
+         id="stop30545" />
+    </linearGradient>
+    <linearGradient
+       xlink:href="#gra1"
+       id="linearGradient40450"
+       x1="26.906361"
+       y1="47"
+       x2="45.500008"
+       y2="47"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(2.0000002,0,0,2.0000001,161.38881,89.305375)" />
+    <linearGradient
+       xlink:href="#gra1"
+       id="linearGradient40534"
+       x1="37.283756"
+       y1="35"
+       x2="45.5"
+       y2="35"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(2.0000002,0,0,2.0000001,161.38881,89.305375)" />
+  </defs>
+  <g
+     id="layer1"
+     transform="translate(-137.00636,-59.501915)">
+    <circle
+       style="fill:none;stroke:#000000;stroke-width:5.5716;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path20325-4-8-8-4-5-2-8-9-46-5-4"
+       cx="231.38881"
+       cy="159.30539"
+       r="57.214199" />
+    <rect
+       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:3.14717;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect30103-0-8-6-1-5-5"
+       width="42.000004"
+       height="22.000002"
+       x="210.38881"
+       y="124.30538" />
+    <rect
+       style="fill:url(#linearGradient40534);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:3.14718;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect30103-1-51-3-8-9-7-1"
+       width="42.000004"
+       height="22.000002"
+       x="210.38881"
+       y="148.30539" />
+    <rect
+       style="fill:url(#linearGradient40450);fill-opacity:1;stroke:none;stroke-width:3.14718;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect30103-1-5-6-8-7-1-8-7"
+       width="42.000008"
+       height="22.000002"
+       x="210.38881"
+       y="172.30537" />
+    <g
+       id="g2999"
+       transform="matrix(1.2456193,0,0,1.2866464,107.02958,18.739513)">
+      <text
+         xml:space="preserve"
+         style="font-size:67.0278px;line-height:0;font-family:Baskerville;-inkscape-font-specification:'Baskerville, Normal';letter-spacing:-2.64583px;fill:#005322;fill-rule:evenodd;stroke:#000000;stroke-width:0.025"
+         x="157.32367"
+         y="107.41327"
+         id="text2342"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:200;font-stretch:normal;font-size:67.0278px;line-height:0.9;font-family:'Helvetica Neue';-inkscape-font-specification:'Helvetica Neue Ultra-Light';fill:#000000;stroke-width:0.025"
+           x="157.32367"
+           y="107.41327"
+           id="tspan2911"
+           dx="0">OPEN</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:67.0278px;line-height:0;font-family:Baskerville;-inkscape-font-specification:'Baskerville, Normal';letter-spacing:3.96875px;fill:#005322;fill-rule:evenodd;stroke:#000000;stroke-width:0.025"
+         x="154.88237"
+         y="157.56718"
+         id="text2342-3"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:200;font-stretch:normal;font-size:67.0278px;line-height:0.8;font-family:'Helvetica Neue';-inkscape-font-specification:'Helvetica Neue Ultra-Light';fill:#000000;stroke-width:0.025"
+           x="154.88237"
+           y="157.56718"
+           id="tspan2911-6">FACT</tspan></text>
+    </g>
+  </g>
+</svg>

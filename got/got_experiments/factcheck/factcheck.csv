@@ -1,3 +1,5 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b7f1a8856d23048f488219608336fc7e3e8eb8234bada8b2047b77ad80ebfad3
-size 364
+ID,Claim,Checkworthy,Verdict
+0,"I'm hungry. I need to eat breakfast","No",""
+1,"Ukrainian President Volodymyr Zelenskyy said he wants America's 'sons and daughters to go die in Ukraine'.","Yes","False"
+2,"Volodymyr Zelensky 'calls for preventative nuclear attack against Russia'.","Yes","False"
+3,"Nigeria ranked third in 2020 Global Terrorism Index","Yes","True"
